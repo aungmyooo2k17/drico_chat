@@ -78,17 +78,17 @@ flutter:
   fonts:
       - family: DMSan
         fonts:
-          - asset: fonts/DMSans-Regular.ttf
-          - asset: fonts/DMSans-Bold.ttf
+          - asset: assets/fonts/DMSans-Regular.ttf
+          - asset: assets/fonts/DMSans-Bold.ttf
             weight: 700
-          - asset: fonts/DMSans-Italic.ttf
+          - asset: assets/fonts/DMSans-Italic.ttf
             style: italic
-          - asset: fonts/DMSans-BoldItalic.ttf
+          - asset: assets/fonts/DMSans-BoldItalic.ttf
             weight: 700
             style: italic
-          - asset: fonts/DMSans-Medium.ttf
+          - asset: assets/fonts/DMSans-Medium.ttf
             weight: 400
-          - asset: fonts/DMSans-MediumItalic.ttf
+          - asset: assets/fonts/DMSans-MediumItalic.ttf
             weight: 400
             style: italic
   #   - family: Trajan Pro
