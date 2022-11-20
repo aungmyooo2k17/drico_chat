@@ -8,6 +8,11 @@ class _App {
   String call = "Calls";
   String notification = "Notifications";
   String contact = "Contacts";
+  String email = "Email ID";
+  String username = "Username";
+  String password = "Password";
+  String signup = "Sing up";
+  String login = "Login";
 }
 
 class _Chatting {

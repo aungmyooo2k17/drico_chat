@@ -1,3 +1,5 @@
+import 'package:drico_chat/features/authentication/presentation/sign_in.dart';
+import 'package:drico_chat/features/authentication/presentation/sign_up.dart';
 import 'package:drico_chat/features/chatting/presentation/chatting_screen.dart';
 import 'package:drico_chat/features/contacts/presentation/contact_screen.dart';
 import 'package:drico_chat/features/notification/presentation/notification_screen.dart';
@@ -36,14 +38,17 @@ class MyApp extends StatelessWidget {
             headline6: TextStyle(fontSize: 22.0),
             bodyText2: TextStyle(fontSize: 14.0, fontFamily: 'DMSan')),
       ),
-      home: const HomePage(),
+      home: const SignUp(),
       routes: {
+        HomePage.name: (context) => const HomePage(),
         ChattingScreen.name: (context) => const ChattingScreen(),
         StoryScreen.name: (context) => const StoryScreen(),
         VoiceCallScreen.name: (context) => const VoiceCallScreen(),
         VoiceCallDetail.name: (context) => const VoiceCallDetail(),
         NotificationScreen.name: (context) => const NotificationScreen(),
-        ContactScreen.name: (context) => const ContactScreen()
+        ContactScreen.name: (context) => const ContactScreen(),
+        SignUp.name: (context) => const SignUp(),
+        SignIn.name: (context) => const SignIn()
       },
     );
   }
