@@ -47,12 +47,14 @@ class _SignInState extends State<SignIn> {
               height: Resources.dimensions.margins.marginMediumLarge,
             ),
             AuthInput(
+                icon: Icons.alternate_email,
                 hintText: Resources.strings.app.email,
                 controller: emailController),
             SizedBox(
               height: Resources.dimensions.margins.marginMediumLarge,
             ),
             AuthInput(
+                icon: Icons.lock,
                 hintText: Resources.strings.app.password,
                 controller: passwordController),
             SizedBox(

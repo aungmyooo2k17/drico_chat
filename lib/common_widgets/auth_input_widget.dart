@@ -5,7 +5,12 @@ import '../constants/resources.dart';
 class AuthInput extends StatefulWidget {
   final String hintText;
   final TextEditingController controller;
-  const AuthInput({Key? key, required this.hintText, required this.controller})
+  final IconData icon;
+  const AuthInput(
+      {Key? key,
+      required this.icon,
+      required this.hintText,
+      required this.controller})
       : super(key: key);
 
   @override
@@ -18,8 +23,10 @@ class _AuthInputState extends State<AuthInput> {
     return Row(
       children: [
         Icon(
-            size: Resources.dimensions.icons.iconSizeMediumLarge,
-            Icons.alternate_email),
+          size: Resources.dimensions.icons.iconSizeMediumLarge,
+          widget.icon,
+          color: Colors.grey,
+        ),
         SizedBox(
           width: Resources.dimensions.margins.marginMediumLarge,
         ),

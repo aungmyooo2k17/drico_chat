@@ -48,18 +48,22 @@ class _SignUpState extends State<SignUp> {
                 height: Resources.dimensions.margins.marginMediumLarge,
               ),
               AuthInput(
+                  icon: Icons.alternate_email,
                   hintText: Resources.strings.app.email,
                   controller: emailController),
               SizedBox(
                 height: Resources.dimensions.margins.marginMediumLarge,
               ),
               AuthInput(
-                  hintText: Resources.strings.app.username,
-                  controller: usernameController),
+                icon: Icons.person,
+                hintText: Resources.strings.app.username,
+                controller: usernameController,
+              ),
               SizedBox(
                 height: Resources.dimensions.margins.marginMediumLarge,
               ),
               AuthInput(
+                  icon: Icons.lock,
                   hintText: Resources.strings.app.password,
                   controller: passwordController),
               SizedBox(
