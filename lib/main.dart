@@ -1,5 +1,12 @@
-import 'package:drico_chat/constants/resources.dart';
-import 'package:drico_chat/features/authentication/presentation/getting_start_screen.dart';
+import 'package:drico_chat/features/chatting/presentation/chatting_screen.dart';
+import 'package:drico_chat/features/contacts/presentation/contact_screen.dart';
+import 'package:drico_chat/features/notification/presentation/notification_screen.dart';
+import 'package:drico_chat/features/story/presentation/story_screen.dart';
+import 'package:drico_chat/features/voice_call/presentation/voice_call_detail_screen.dart';
+import 'package:drico_chat/features/voice_call/presentation/voice_call_screen.dart';
+import 'package:drico_chat/home_page.dart';
+
+import 'features/chatting_list/presentation/chatting_list_screen.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -29,7 +36,15 @@ class MyApp extends StatelessWidget {
             headline6: TextStyle(fontSize: 22.0),
             bodyText2: TextStyle(fontSize: 14.0, fontFamily: 'DMSan')),
       ),
-      home: const GettingStart(),
+      home: const HomePage(),
+      routes: {
+        ChattingScreen.name: (context) => const ChattingScreen(),
+        StoryScreen.name: (context) => const StoryScreen(),
+        VoiceCallScreen.name: (context) => const VoiceCallScreen(),
+        VoiceCallDetail.name: (context) => const VoiceCallDetail(),
+        NotificationScreen.name: (context) => const NotificationScreen(),
+        ContactScreen.name: (context) => const ContactScreen()
+      },
     );
   }
 }
