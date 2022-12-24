@@ -1,5 +1,5 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.drico_chat">
+    package="com.aungmyooo.drico_chat">
    <application
         android:label="drico_chat"
         android:name="${applicationName}"

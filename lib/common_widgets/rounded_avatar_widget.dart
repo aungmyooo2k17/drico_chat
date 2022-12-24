@@ -1,5 +1,3 @@
-import 'dart:ffi';
-
 import 'package:drico_chat/constants/resources.dart';
 import 'package:flutter/material.dart';
 

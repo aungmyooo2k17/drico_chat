@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "71026070337",
+    "project_id": "drico-chat",
+    "storage_bucket": "drico-chat.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:71026070337:android:0e79bfbb866e801ede07c0",
+        "android_client_info": {
+          "package_name": "com.aungmyooo.drico_chat"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "71026070337-qldlges1jgstfqf4579j0mllbtnaijgv.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBiNcAgleuX2xNw_BqzufmjxEbtaJXxH8o"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "71026070337-qldlges1jgstfqf4579j0mllbtnaijgv.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

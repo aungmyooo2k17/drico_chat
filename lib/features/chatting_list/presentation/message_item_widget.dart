@@ -1,21 +1,13 @@
 import 'package:drico_chat/constants/resources.dart';
+import 'package:drico_chat/data/model/message_model.dart';
 import 'package:flutter/material.dart';
 
 import '../../../common_widgets/user_info_widget.dart';
 
 class MessageItem extends StatelessWidget {
-  final String name;
-  final String message;
-  final String lastMessageAt;
-  final bool isSeen;
+  final MessageModel messageModel;
 
-  const MessageItem(
-      {Key? key,
-      required this.name,
-      required this.message,
-      required this.lastMessageAt,
-      required this.isSeen})
-      : super(key: key);
+  const MessageItem({Key? key, required this.messageModel}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -26,18 +18,18 @@ class MessageItem extends StatelessWidget {
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: [
           UserInfo(
-            name: name,
-            message: message,
+            name: messageModel.name ?? "",
+            message: messageModel.message,
           ),
           Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               Text(
-                lastMessageAt,
+                messageModel.lastMessageAt ?? "",
                 style: Theme.of(context).textTheme.caption,
               ),
               Icon(
-                isSeen ? Icons.done_all : Icons.done,
+                messageModel.isSeen ?? false ? Icons.done_all : Icons.done,
                 color: Colors.blue,
                 size: 12,
               )

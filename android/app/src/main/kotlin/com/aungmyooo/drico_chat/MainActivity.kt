@@ -1,4 +1,4 @@
-package com.example.drico_chat
+package com.aungmyooo.drico_chat
 
 import io.flutter.embedding.android.FlutterActivity
 
